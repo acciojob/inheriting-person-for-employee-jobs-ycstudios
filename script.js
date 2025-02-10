@@ -5,18 +5,18 @@ class Person {
     }
 
     greet() {
-        return `Hello, my name is ${this.name}, I am ${this.age} years old.`;
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
 }
 
 class Employee extends Person {
     constructor(name, age, jobTitle) {
-        super(name, age); // Calling the parent class constructor first
+        super(name, age);
         this.jobTitle = jobTitle;
     }
 
     jobGreet() {
-        return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`;
+        console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
     }
 }
 
